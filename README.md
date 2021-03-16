@@ -6,3 +6,4 @@ EMI design for GUI - with Restrictions.py - Runs the cumulative sensitivity mode
 
 Each subfolder is dedicated to one or more figures from the manuscript. With each containing the data and code that generates the figure.
 
+[![DOI](https://zenodo.org/badge/348290898.svg)](https://zenodo.org/badge/latestdoi/348290898)
