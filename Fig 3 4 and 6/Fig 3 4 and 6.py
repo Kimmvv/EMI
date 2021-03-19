@@ -54,6 +54,7 @@ predicted = full['predicted'].values
 rms = sqrt(mean_squared_error(np.squeeze(true), predicted))
 rms
 
+#Calculate std for each step on the x-axis
 values = np.sort(full[tar].unique())
 mean_f = []
 std_f = []
@@ -68,7 +69,7 @@ for i in values:
     std_f.append(tempvar)
 std_f = np.array(std_f)
 
-
+#Find the uncertain predictions
 bad = full.loc[full['Dif'] > std_f.mean()]
 
 #param = ['ECA', 'ThickA', 'ECB', 'ThickB', 'ECC']
