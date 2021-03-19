@@ -117,12 +117,15 @@ i=0
 fig, ax1 = plt.subplots(figsize=(8,6))
 ax2 = ax1.twiny()
 
+#EC
 ax1.hist(bad[param[i]]   ,alpha=1, rwidth=0.85, histtype='step', label='ECA', color='blue')
-ax1.hist(bad[param[i+2]] ,alpha=1, rwidth=0.85, histtype='step', label='ECB', color='green') 
-ax1.hist(bad[param[i+4]] ,alpha=1, rwidth=0.85, histtype='step', label='ECC', color='red')
-ax2.hist(bad[param[i+1]] ,alpha=1, rwidth=0.85, histtype='step', linestyle=('solid'), color='gray')
-ax2.hist(bad[param[i+3]] ,alpha=1, rwidth=0.85, histtype='step', linestyle=('solid'), color='magenta')
+ax1.hist(bad[param[i+2]] ,alpha=1, rwidth=0.85, histtype='step', label='ECB', color='red') 
+ax1.hist(bad[param[i+4]] ,alpha=1, rwidth=0.85, histtype='step', label='ECC', color='magenta')
+#Thickness
+ax2.hist(bad[param[i+1]] ,alpha=1, rwidth=0.85, histtype='step', linestyle=('solid'), color='green')
+ax2.hist(bad[param[i+3]] ,alpha=1, rwidth=0.85, histtype='step', linestyle=('solid'), color='gray')
 
+#Create custom Legend
 ax2.plot([], [], '-', label="ECA",    color='blue')
 ax2.plot([], [], '-', label="ThickA", color='green')
 ax2.plot([], [], '-', label="ECB",    color='red')
