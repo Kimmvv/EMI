@@ -22,7 +22,7 @@ param = ['ECA', 'ThickA', 'ECB', 'ThickB', 'ECC']
 #############################################################################
 #Choose between full range or restricted case
 ############################################################################
-res = 1 # 1 means restricted and anything else is the full range
+res = 0 # 1 means restricted and anything else is the full range
 
 #for it,itar in zip(targets,param):
 key = 0
